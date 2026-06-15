@@ -4,160 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trade With Munaaf</title>
+<title>Stock Market Learning Community</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0f172a;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-color:#fff;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
 }
-
-/* CARD */
 
 .container{
-width:95%;
-max-width:420px;
-padding:30px 25px;
-border-radius:18px;
-
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
-
-border:1px solid rgba(255,255,255,0.08);
-
-box-shadow:0 20px 60px rgba(0,0,0,0.6);
-text-align:center;
+    width:100%;
+    max-width:380px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    color:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
-/* LOGO */
-
-.logo{
-width:80px;
-height:80px;
-border-radius:50%;
-border:2px solid #FFD700;
-margin-bottom:12px;
+.profile{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:3px solid #38bdf8;
+    object-fit:cover;
+    margin-bottom:15px;
 }
-
-/* TEXT */
 
 h1{
-font-size:22px;
-color:#FFD700;
-margin-bottom:6px;
-}
-
-h2{
-font-size:15px;
-opacity:0.9;
-margin-bottom:10px;
+    font-size:24px;
+    font-weight:800;
+    margin-bottom:8px;
 }
 
 .sub{
-font-size:13px;
-opacity:0.7;
-margin-bottom:18px;
+    font-size:13px;
+    opacity:.85;
+    margin-bottom:18px;
 }
 
-/* BUTTON */
-
 .btn{
-display:block;
-text-decoration:none;
-background:#22c55e;
-color:#000;
-font-weight:700;
-padding:16px;
-border-radius:10px;
-margin:12px 0;
-transition:0.3s;
+    display:block;
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border-radius:50px;
+    font-size:15px;
+    font-weight:700;
+    text-decoration:none;
+    background:linear-gradient(135deg,#38bdf8,#4ade80);
+    color:#000;
+    transition:.3s;
 }
 
 .btn:hover{
-background:#16a34a;
-transform:scale(1.03);
+    transform:translateY(-2px);
+    box-shadow:0 0 18px rgba(74,222,128,.6);
 }
-
-/* TRUST BOX */
-
-.trust{
-background:rgba(0,255,150,0.08);
-padding:10px;
-border-radius:10px;
-font-size:13px;
-margin-bottom:15px;
-border:1px solid rgba(0,255,150,0.2);
-}
-
-/* LIST */
 
 .points{
-list-style:none;
-font-size:14px;
-text-align:left;
-margin:15px 0;
+    text-align:left;
+    margin-top:10px;
+    font-size:14px;
+    line-height:1.9;
 }
 
-.points li{
-margin:8px 0;
+.points span{
+    display:block;
 }
-
-/* URGENCY */
-
-.timer{
-margin-top:10px;
-font-size:13px;
-color:#facc15;
-}
-
-/* SOCIAL PROOF */
-
-.proof{
-margin-top:12px;
-font-size:12px;
-opacity:0.7;
-}
-
-/* FOOTER BRAND */
 
 .footer{
-margin-top:20px;
-font-size:12px;
-opacity:0.6;
+    margin-top:18px;
+    font-size:11px;
+    opacity:.75;
+    line-height:1.6;
 }
 
-.footer a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:600;
+.ads{
+    margin-top:15px;
+    font-size:12px;
+    padding:10px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#4f46e5,#9333ea,#ec4899);
+    box-shadow:0 0 10px rgba(236,72,153,.5);
+    animation:glow 2s infinite alternate;
 }
 
-.footer a:hover{
-text-decoration:underline;
+.ads a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
 }
 
-/* RISK */
-
-.risk{
-margin-top:10px;
-font-size:11px;
-opacity:0.5;
+@keyframes glow{
+    from{
+        box-shadow:0 0 8px #9333ea;
+    }
+    to{
+        box-shadow:0 0 16px #ec4899;
+    }
 }
-
 </style>
 </head>
 
@@ -165,58 +126,59 @@ opacity:0.5;
 
 <div class="container">
 
-<img src="https://i.ibb.co/XP3kvGh/gw-Wdz-J5-L7-R64-Xz-Sm-SRd-LQH1in-GIlyb-Y0-DMal-Vyj-Sh-Pc-NIy-DDX-Mr-B5h-Q5l-ZQBLQZI3-z-SK47-I1-Ww-B-Bpse.jpg" class="logo">
+<img src="https://i.ibb.co/Fb0C6rVG/In-Shot-20260615-165838625.jpg" alt="Logo" class="profile">
 
-<h1>WIZARD TRADER</h1>
-<h2>NIFTY • BANKNIFTY • OPTIONS</h2>
+<h1>मराठी</h1>
 
-<p class="sub">
-Daily Intraday Trading Signals & Analysis
-</p>
+<div class="sub">
+Learn • Practice • Improve Trading Skills
+</div>
 
-<!-- TOP BUTTON -->
-<a href="https://t.me/+tfH-Sgz9H2kwNWZl" class="btn">
-🚀 Join Free Telegram Channel
+<a href="https://t.me/+8NgIfezlPaRkNzc1" class="btn" target="_blank">
+🚀 JOIN FREE LEARNING COMMUNITY
 </a>
 
-<div class="trust">
-✔ Trusted by 5,000+ Traders <br>
-✔ Daily Consistent Setups
+<div class="points">
+<span>📈 NIFTY • BANKNIFTY • SENSEX Basics</span>
+<span>📚 Educational Content & Trading Concepts</span>
+<span>🛡️ Risk Management & Awareness</span>
+<span>📊 Market Updates & Insights</span>
 </div>
 
-<ul class="points">
-<li>✔ 5–7 High Probability Trades</li>
-<li>✔ Exact Entry, SL & Target</li>
-<li>✔ Beginner Friendly Guidance</li>
-<li>✔ Live Market Updates</li>
-</ul>
-
-<!-- BOTTOM BUTTON -->
-<a href="https://t.me/+tfH-Sgz9H2kwNWZl" class="btn">
-🚀 Join Free Telegram Channel
+<a href="https://t.me/+8NgIfezlPaRkNzc1" class="btn" target="_blank">
+🔥 JOIN FREE LEARNING COMMUNITY
 </a>
 
-<div class="timer">
-⏳ Free Access Closing Soon
-</div>
-
-<div class="proof">
-📈 Limited Seats • Active Community
-</div>
-
-<p class="risk">
-⚠ Market investments are subject to risk
-</p>
-
-<!-- CLEAN FOOTER -->
 <div class="footer">
-Powered by 
+Disclaimer: This content is for educational purposes only.<br>
+We do not provide investment advice or stock recommendations.<br>
+We are not SEBI registered. Stock market investments are subject to market risks.
+</div>
+
+<div class="ads">
+🚀 Powered by
 <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">
-AdsBuild Agency
+ADSBUILD AGENCY
 </a>
 </div>
 
 </div>
-
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1747207632939727');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1747207632939727&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
